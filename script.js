@@ -1,10 +1,10 @@
 const wrapper = document.querySelector('.wrapper'),
   inputField = document.querySelector('.input-part input'),
   airportInfo = document.querySelector('.airport_info'),
-  airportCity = document.querySelector('.airport_city');
-airportName = document.querySelector('.airport_name');
-airportDistance = document.querySelector('.airport_distance');
-locationBtn = document.querySelector('.location_btn');
+  airportCity = document.querySelector('.airport_city'),
+  airportName = document.querySelector('.airport_name'),
+  airportDistance = document.querySelector('.airport_distance'),
+  locationBtn = document.querySelector('.location_btn');
 
 inputField.addEventListener('keyup', (e) => {
   if (e.key == 'Enter' && inputField.value != '') {
