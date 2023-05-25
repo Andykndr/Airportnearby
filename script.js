@@ -33,7 +33,8 @@ function nearbyAirport(info) {
   airportInfo.classList.add('active');
   airportCity.innerHTML = info.response.cities[0].name;
   airportName.innerHTML = info.response.airports[0].name;
-  airportDistance.innerHTML = info.response.airports[0].distance;
+  airportDistance.innerHTML =
+    Math.round(info.response.airports[0].distance) + 'km';
 }
 locationBtn.addEventListener('click', () => {
   if (navigator.geolocation) {
@@ -59,5 +60,6 @@ function nearbyAirportBtn(info) {
   airportInfo.classList.add('active');
   airportCity.innerHTML = info.response.cities[0].name;
   airportName.innerHTML = info.response.airports[0].name;
-  airportDistance.innerHTML = info.response.airports[0].distance;
+  airportDistance.innerHTML =
+    Math.round(info.response.airports[0].distance) + 'km';
 }
